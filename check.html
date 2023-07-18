@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cisco.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand center text-center" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="box" id="boxx">
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Get The headQuarters</h5>
+              <p class="card-text">Get your headQuarters of the Game.</p>
+              <button id="getmaster" class="btn btn-primary">Get</button>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Add Roads</h5>
+              <p class="card-text">Add the Roads between any 2 city in the game.</p>
+              <button id="addedge" href="#" class="btn btn-primary">ADD</button>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Add City </h5>
+              <p class="card-text">Add the city containing items to the game.</p>
+              <button id="addnode" href="#" class="btn btn-primary">ADD</button>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Transfer</h5>
+              <p class="card-text">Tranfer the items from one city to another.</p>
+              <button id="transfer" href="#" class="btn btn-primary">Tranfer the items</button>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Check</h5>
+              <p class="card-text">Check if the City is present or not in the game.</p>
+              <button id="check" href="#" class="btn btn-primary">Check if Present</button>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Swap the Data</h5>
+              <p class="card-text">Swap the data items between any 2 cities</p>
+              <button id="swapdata" href="#" class="btn btn-primary">SWAP</button>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Display</h5>
+              <p class="card-text">Display the content of any City that you want to see.</p>
+              <button id="display" href="#" class="btn btn-primary">Display</button>
+            </div>
+          </div>
+
+          
+          
+      </div>
+      <div class="inputbox middle invisible" id="middlebox">
+        <label for="">Enter City 1</label>
+        <input id="city1" type="text">
+        <label for="">Enter City 2</label>
+        <input id="city2" type="text">
+        <label for="">Enter Transmission Cost</label>
+        <input id="cost" type="text">
+        <button id="addedgebox" class="btn btn-success">Submit</button>
+    </div>
+    <div class="inputbox middle invisible" id="masterbox">
+        <label for="">Enter master city:</label>
+        <input id="master" type="text">
+        <button id="mastersubmit" class="btn btn-success">Submit</button>
+    </div>
+    <div class="inputbox middle invisible" id="checkbox">
+        <label for="">Enter city:</label>
+        <input id="checkinput" type="text">
+        <button id="checksubmit" class="btn btn-success">Submit</button>
+    </div>
+    <div class="inputbox middle invisible" id="swapbox">
+      <label for="">Enter City 1</label>
+      <input id="scity1" type="text">
+      <label for="">Enter City 2</label>
+      <input id="scity2" type="text">
+      <button id="swapsubmit" class="btn btn-success">Submit</button>
+  </div>
+    <div class="inputbox middle invisible" id="tbox">
+      <label for="">Enter City 1</label>
+      <input id="tcity1" type="text">
+      <label for="">Enter City 2</label>
+      <input id="tcity2" type="text">
+      <button id="tsubmit" class="btn btn-success">Submit</button>
+  </div>
+  <div class="inputbox middle invisible" id="displaybox">
+    <label for="">Enter city:</label>
+    <input id="displayinput" type="text">
+    <button id="displaysubmit" class="btn btn-success">Submit</button>
+</div>
+<div class="inputbox middle invisible" id="displayoutput">
+  <button id="displayok" onclick=nonedisplay()>ok</button>
+</div>
+<div class="inputbox middle invisible" id="transferoutput">
+</div>
+
+<div class="inputbox middle invisible" id="addbox">
+  <label for="">Enter city:</label>
+  <input id="addinput" type="text">
+  <label for="">Enter number of items:</label>
+  <input id="items" type="text">
+  <button id="addsubmit" class="btn btn-success">Submit</button>
+</div>
+
+    
+
+    <script src="file.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
